@@ -13,6 +13,15 @@ const About = () => {
       count: "02",
     },
   ];
+  const onButtonClick = () => {
+    const pdfUrl = "../assets/Asadullah Imran CV.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "document.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
@@ -42,9 +51,10 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../assets/Asadullah Imran CV.pdf" download>
-                <button className="btn-primary">Download CV</button>
-              </a>
+
+              <button className="btn-primary" onClick={onButtonClick}>
+                Download CV
+              </button>
             </div>
           </div>
           <div></div>
