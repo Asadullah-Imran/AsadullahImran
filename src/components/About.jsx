@@ -13,15 +13,6 @@ const About = () => {
       count: "02",
     },
   ];
-  const onButtonClick = () => {
-    const pdfUrl = "../assets/cv.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
@@ -30,9 +21,9 @@ const About = () => {
         </h3>
         <p className="text-gray-400 my-3 text-lg">My Introduction</p>
         <div className="flex md:flex-row flex-col-reverse md:gap-6 items-center gap-12 px-10 max-w-6xl mx-auto ">
-          <div>
+          <div className="p-2">
             <div className="text-gray-300 my-3 ">
-              <p>
+              <p className="text-justify leading-6 w-11/12">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
                 placeat vero minima, hic nisi praesentium commodi rem culpa
                 velit nihil non dolores error corrupti accusamus reprehenderit
@@ -51,13 +42,20 @@ const About = () => {
               </div>
               <br />
               <br />
-
-              <button className="btn-primary" onClick={onButtonClick}>
-                Download CV
-              </button>
+              <a href="../assets/cv.pdf" download>
+                <button className="btn-primary">Download CV</button>
+              </a>
             </div>
           </div>
-          <div></div>
+          <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
+            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg">
+              <img
+                src="/public/pic.png"
+                alt="about pic"
+                className="w-full object-cover bg-cyan-500 rounded-xl"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
