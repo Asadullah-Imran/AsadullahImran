@@ -14,7 +14,7 @@ const About = () => {
     },
   ];
   const onButtonClick = () => {
-    const pdfUrl = "../assets/Asadullah Imran CV.pdf";
+    const pdfUrl = "../assets/cv.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "document.pdf"; // specify the filename
