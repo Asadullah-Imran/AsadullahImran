@@ -42,7 +42,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../assets/cv.pdf" download>
+              <a href="https://asadullahimran.vercel.app/src/assets/cv.pdf" download>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>
