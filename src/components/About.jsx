@@ -42,7 +42,7 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href="../assets/cv.pdf" download>
+              <a href="/cv.pdf" download>
                 <button className="btn-primary">Download CV</button>
               </a>
             </div>
@@ -50,7 +50,7 @@ const About = () => {
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
             <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg">
               <img
-                src="/public/pic.png"
+                src="/pic.png"
                 alt="about pic"
                 className="w-full object-cover bg-cyan-500 rounded-xl"
               />

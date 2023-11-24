@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Hireme from "./components/Hireme";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
+
 import Skills from "./components/Skills";
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Bot />
       <Hero />
       <About />
+
       <Skills />
       <Hireme />
       <Project />
